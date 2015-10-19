@@ -1,0 +1,56 @@
+document.getElementById("q1answer").style.setProperty("text-decoration", "line-through");
+<DOCTYPE html>
+<html>
+<head>
+	<title>Online Test</title>
+</head>
+<body>
+
+	<h1>Online Test</h1>
+	
+	<p>Question1: </p>
+	<p>Which protagonist stars in the Halo series of video game?</p>
+	<p>Crash Bandicoot | Marcus Fenix | Master Chief | Mario</p>
+	<p><input type="text" id="q1answer" /> <span id="correction"></span></p>
+	<p>Question2: </p>
+	<p>In which game did the Konami Code make its first appearance?</p>
+	<p>Contra | Gradius | Pac-Man | Super Mario Bros.</p>
+	<p><input type="text" id="q2answer" /></p>
+	<p>Question3: </p>
+	<p>Who is Destiny's Exotic Gear Vendor?</p>
+	<p>Xur, Agent of the Nine | The Stranger | Master Rahool | Eris Morn</p>
+	<p><input type="text" id="q3answer" /></p>
+	<p>Question4: </p>
+	<p></p>
+	<p></p>
+	<p><input type="text" id="q4answer" /></p>
+	<p>Question5: </p>
+	<p></p>
+	<p></p>
+	<p><input type="text" id="q5answer" /></p>
+	
+	<button onclick="gradeTest();" id="btnGradeTest">Grade my Test</button>
+	
+	
+	
+	<script>
+		var gradeTest = function()
+		{
+			var answer1 = document.getElementById("q1answer").value.toLowerCase();
+			if (answer1 === "master chief")
+			{
+				alert("Question Correct");
+			}
+			var answer2 = document.getElementById("q2answer").value.toLowerCase();
+			if (answer2 === "gradius")
+			{
+				alert("Question Correct");
+			}
+			var answer3 = document.getElementById("q3answer").value.toLowerCase();
+			var answer4 = document.getElementById("q4answer").value.toLowerCase();
+			var answer5 = document.getElementById("q5answer").value.toLowerCase();
+		}
+	</script>
+	
+</body>
+</html>
